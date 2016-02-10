@@ -19,6 +19,7 @@ public class Administrator extends Membre implements Serializable {
 	private List<CharityEvent> charityEvents;
 	private List<News> news ; 
 	private static final long serialVersionUID = 1L;
+	
 
 	public Administrator() {
 		super();
