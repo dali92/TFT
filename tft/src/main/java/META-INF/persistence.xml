@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="tft">
+		<jta-data-source>java:/tft</jta-data-source>
+		<class>tn.esprit.tft.domain.ADResponsible</class>
+		<class>tn.esprit.tft.domain.Administrator</class>
+		<class>tn.esprit.tft.domain.CharityEvent</class>
+		<class>tn.esprit.tft.domain.Competition</class>
+		<class>tn.esprit.tft.domain.Doctor</class>
+		<class>tn.esprit.tft.domain.DoppingTest</class>
+		<class>tn.esprit.tft.domain.Event</class>
+		<class>tn.esprit.tft.domain.Fan</class>
+		<class>tn.esprit.tft.domain.Match</class>
+		<class>tn.esprit.tft.domain.Membre</class>
+		<class>tn.esprit.tft.domain.News</class>
+		<class>tn.esprit.tft.domain.Player</class>
+		<class>tn.esprit.tft.domain.Prediction</class>
+		<class>tn.esprit.tft.domain.Refree</class>
+		<class>tn.esprit.tft.domain.Stadium</class>
+		<class>tn.esprit.tft.domain.Ticket</class>
+		<class>tn.esprit.tft.domain.TrainingSession</class>
+		<class>tn.esprit.tft.domain.UpgradeContest</class>
+		<class>tn.esprit.tft.domain.Venue</class>
+		<class>tn.esprit.tft.domain.Visitor</class>
+		<properties>
+			<property name="hibernate.hbm2ddl.auto" value="create" />
+			<property name="hibernate.show_sql" value="true"/>
+			<property name="hibernate.format_sql" value="true"/>
+			<property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+		</properties>
+	</persistence-unit>
+</persistence>
