@@ -13,8 +13,10 @@ import tn.esprit.tft.domain.Membre;
 @Entity
 public class Player extends Membre implements Serializable {
 
-	
-	private String categorie;
+	private Integer weight;
+	private Integer height;
+	private Integer handPlays;
+	private String category;
 	private Integer rangeP;
 	private Integer scoreNat;
 	private Integer scoreInt;
@@ -24,12 +26,12 @@ public class Player extends Membre implements Serializable {
 	public Player() {
 		super();
 	}   
-	public String getCategorie() {
-		return this.categorie;
+	public String getCategory() {
+		return this.category;
 	}
 
-	public void setCategorie(String categorie) {
-		this.categorie = categorie;
+	public void setCategorie(String category) {
+		this.category = category;
 	}   
 	
 	public Integer getRangeP() {

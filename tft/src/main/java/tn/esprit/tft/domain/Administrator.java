@@ -15,6 +15,8 @@ import tn.esprit.tft.domain.Membre;
 
 public class Administrator extends Membre implements Serializable {
 
+	private Integer salary;
+
 	private List<Competition> competitions ;
 	private List<CharityEvent> charityEvents;
 	private List<News> news ; 

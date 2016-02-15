@@ -14,6 +14,7 @@ import tn.esprit.tft.domain.Membre;
 @Table(name="t_doctor")
 
 public class Doctor extends Membre implements Serializable {
+	private Integer salary;
 
 	private List<DoppingTest> doppingTests;
 	private static final long serialVersionUID = 1L;

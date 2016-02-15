@@ -13,7 +13,8 @@ import tn.esprit.tft.domain.Membre;
 
 public class ADResponsible extends Membre implements Serializable {
 
-	
+	private Integer salary;
+
 	private static final long serialVersionUID = 1L;
 
 	public ADResponsible() {

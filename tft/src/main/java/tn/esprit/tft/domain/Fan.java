@@ -14,6 +14,7 @@ import tn.esprit.tft.domain.Membre;
 @Table(name="t_fan")
 
 public class Fan extends Membre implements Serializable {
+	private String hobby;
 
 	private List<Ticket> tickets ;
 	private List<Prediction> predictions ; 
